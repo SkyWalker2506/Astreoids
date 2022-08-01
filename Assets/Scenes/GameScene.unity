@@ -299,6 +299,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1872518843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3171561235166062102, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
+  m_PrefabInstance: {fileID: 3171561235534894320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1872518844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872518843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440ad862700eb498b90b8080ce141371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &954127640357608523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,6 +380,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1739815547778378006, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
+      propertyPath: sizeList
+      value: 
+      objectReference: {fileID: 11400000, guid: 203da284ba8fa4f0fa994f0f497a7973, type: 2}
+    - target: {fileID: 1739815547778378006, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
+      propertyPath: CurrentLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3171561235166062102, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
       propertyPath: m_Name
       value: Astreoid
@@ -377,7 +402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171561235166062106, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 3171561235166062106, guid: 06d16ce43be764e22a3bd782a1b26443, type: 3}
       propertyPath: m_LocalPosition.z

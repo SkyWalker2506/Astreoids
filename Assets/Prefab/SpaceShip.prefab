@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 382317c27397f471697b727c7916e9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolPrefab: {fileID: 3626698710797487913, guid: 0af25a05b04f14bad86465694985ca8e, type: 3}
+  poolObjPrefab: {fileID: 3461247621606904276, guid: 0af25a05b04f14bad86465694985ca8e, type: 3}
   firstCreatedAmount: 100
   batchAmount: 25
 --- !u!1 &4306638331141290445

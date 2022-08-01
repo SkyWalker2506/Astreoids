@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     ICanMove2D canMove;
+    IPoolObj poolObj;
 
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class Bullet : MonoBehaviour
     void SetInterfaces()
     {
         canMove = GetComponent<ICanMove2D>();
+        poolObj = GetComponent<IPoolObj>();
     }
 
     void MoveCheck()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pool : MonoBehaviour, IPool
 {
-    [SerializeField] PoolObj poolPrefab;
+    [SerializeField] GameObject poolObjPrefab;
     [SerializeField] int firstCreatedAmount=100;
     [SerializeField] int batchAmount=25;
 
@@ -21,8 +21,9 @@ public class Pool : MonoBehaviour, IPool
     {
         for (int i = 0; i < amount; i++)
         {
-            var poolObj = Instantiate(poolPrefab).GetComponent<PoolObj>();
-            poolObj.gameObject.SetActive(false);
+            var poolObj = Instantiate(poolObjPrefab).GetComponent<IPoolObj>();
+            ((MonoBehaviour)poolObj).gameObject.SetActive(false);
+            poolObj.Pool = this;
             AvailableObjects.Push(poolObj);
         }
     }
@@ -38,19 +39,19 @@ public class Pool : MonoBehaviour, IPool
 
     public void Return(IPoolObj poolObj)
     {
-        var obj = ((PoolObj)poolObj).gameObject;
-        obj.SetActive(true);
+        AvailableObjects.Push(poolObj);
+        OnReturningObject(poolObj);
     }
 
     public void OnGettingObject(IPoolObj poolObj)
     {
-        var obj = ((PoolObj)poolObj).gameObject;
+        var obj = ((MonoBehaviour)poolObj).gameObject;
         obj.SetActive(true);
     }
 
     public void OnReturningObject(IPoolObj poolObj)
     {
-        var obj = ((PoolObj)poolObj).gameObject;
+        var obj = ((MonoBehaviour)poolObj).gameObject;
         obj.SetActive(false);
     }
 }
