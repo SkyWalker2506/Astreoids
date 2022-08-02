@@ -23,7 +23,7 @@ public class Spaceship : MonoBehaviour
     {
         canMove = GetComponent<ICanMove2D>();
         canTurn = GetComponent<ICanTurn>();
-        canAttack = GetComponent<ICanAttack>();
+        canAttack = GetComponentInChildren<ICanAttack>();
     }
 
 

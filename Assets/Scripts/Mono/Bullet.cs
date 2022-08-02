@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    ICanMove2D canMove;
     IPoolObj poolObj;
+    IDamager damager;
 
     private void Awake()
     {
         SetInterfaces();
     }
 
-    private void FixedUpdate()
-    {
-        MoveCheck();
-    }
-
     void SetInterfaces()
     {
-        canMove = GetComponent<ICanMove2D>();
         poolObj = GetComponent<IPoolObj>();
+        damager = GetComponent<IDamager>();
+
     }
 
-    void MoveCheck()
-    {
-        if (canMove == null) return;
-        canMove.MoveForward();
-    }
 
 }

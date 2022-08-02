@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc79207caad54ba5881f0809ebaa4c3, type: 3}
-  m_Name: Astreoid Sizes
+  m_Script: {fileID: 11500000, guid: 3b55ce6fb03d2459dba916e7100656c4, type: 3}
+  m_Name: AstreoidSpeed
   m_EditorClassIdentifier: 
-  Sizes:
-  - 0.45
-  - 0.55
-  - 0.75
-  - 1
+  Value: 2

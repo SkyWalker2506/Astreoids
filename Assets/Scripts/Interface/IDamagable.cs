@@ -6,4 +6,6 @@ using UnityEngine;
 public interface IDamagable 
 {
     public Action<int> OnDamaged { get; set; }
+
+    public void ApplyDamage(int damage);
 }
