@@ -6,13 +6,18 @@ public class Spaceship : MonoBehaviour
     ICanMove2D canMove;
     ICanTurn canTurn;
     ICanAttack canAttack;
+    public static Spaceship Instance;
+
 
     private void Awake()
     {
+        if (Instance)
+            Destroy(gameObject);
+        else
+            Instance = this;
         SetInterfaces();
     }
 
-    
     private void Update()
     {
         MoveCheck();

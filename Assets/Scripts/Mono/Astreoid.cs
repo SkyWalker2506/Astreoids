@@ -5,18 +5,13 @@ public class Astreoid : MonoBehaviour
 {
     IDamagable damagable;
     IPoolObj poolObj;
-    [SerializeField] AstreoidSize sizeList;
     public int CurrentLevel;
     public static Action<Astreoid> OnDestroyed;
 
     void Awake()
     {
+        poolObj = GetComponent<IPoolObj>();
         damagable = GetComponent<IDamagable>();
-    }
-
-    private void Start()
-    {
-        SetAstreoid();
     }
 
     private void OnEnable()
@@ -29,11 +24,6 @@ public class Astreoid : MonoBehaviour
     {
         if (damagable != null)
             damagable.OnDamaged -= OnDamaged;
-    }
-
-    void SetAstreoid()
-    {
-        transform.localScale = Vector3.one * sizeList.Sizes[Mathf.Clamp(CurrentLevel, 0, sizeList.Sizes.Length-1)];
     }
 
     void OnDamaged(int value)

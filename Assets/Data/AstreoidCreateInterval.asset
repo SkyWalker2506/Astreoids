@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b55ce6fb03d2459dba916e7100656c4, type: 3}
-  m_Name: BulletReturnTime
+  m_Name: AstreoidCreateInterval
   m_EditorClassIdentifier: 
-  Value: 5
+  Value: 2

@@ -17,7 +17,7 @@ public class ForwardMover : MonoBehaviour, ICanMove2D
     public void MoveForward()
     {
         if (forwardSpeed)
-            transform.Translate(transform.up * forwardSpeed.Value * Time.deltaTime);
+            transform.Translate(transform.forward * forwardSpeed.Value * Time.deltaTime,Space.World);
     }
 
     public void MoveLeft()

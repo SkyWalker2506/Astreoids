@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 3171561235166062104}
   - component: {fileID: 3171561235166062103}
   - component: {fileID: 1739815547778378006}
-  - component: {fileID: 1872518844}
   - component: {fileID: 1872518845}
+  - component: {fileID: 3171561235534894322}
+  - component: {fileID: 3171561235534894323}
   m_Layer: 0
   m_Name: Astreoid
   m_TagString: Untagged
@@ -110,20 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58f052f0627641c0b26cd76695328d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeList: {fileID: 11400000, guid: 203da284ba8fa4f0fa994f0f497a7973, type: 2}
   CurrentLevel: 4
---- !u!114 &1872518844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3171561235166062102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 440ad862700eb498b90b8080ce141371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1872518845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,3 +125,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: {fileID: 11400000, guid: 4c71ced61fbd20c41ad34e94a5a53097, type: 2}
+--- !u!114 &3171561235534894322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171561235166062102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7781009ee48358d438322878e8104ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3171561235534894323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171561235166062102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebd045fb2e5514eb896a031f5b3b4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  releaseTime: {fileID: 11400000, guid: 55ed21db76b89ae49bd8e440d9203884, type: 2}
