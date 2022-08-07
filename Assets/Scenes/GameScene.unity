@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -410,6 +410,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1017646750, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
+      propertyPath: offset
+      value: 
+      objectReference: {fileID: 11400000, guid: a71993a3f718dfb4496a5158cbb07b1b, type: 2}
     - target: {fileID: 954127640673952082, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -457,34 +461,6 @@ PrefabInstance:
     - target: {fileID: 954127640673952094, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
       propertyPath: m_Name
       value: SpaceShip
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4571631384999130799, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45f05a7d620f3493788ef84a7e95ede8, type: 3}

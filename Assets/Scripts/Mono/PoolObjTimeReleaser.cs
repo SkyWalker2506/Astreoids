@@ -21,6 +21,5 @@ public class PoolObjTimeReleaser : MonoBehaviour, IPoolObj
     public void Release()
     {
         Pool.Return(this);
-        Debug.Log("Returned");
-    }
+    }    
 }

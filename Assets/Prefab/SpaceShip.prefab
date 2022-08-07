@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 954127640673952093}
   - component: {fileID: 354762006}
   - component: {fileID: 7929463961630166532}
+  - component: {fileID: 1017646750}
   m_Layer: 0
   m_Name: SpaceShip
   m_TagString: Untagged
@@ -127,6 +128,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnSpeed: {fileID: 11400000, guid: 4b7c8f3b1e42b476c8f4ab41feef589d, type: 2}
   moveSpeed: {fileID: 11400000, guid: 1561c3a03b11a44ed81bdc391616a380, type: 2}
+--- !u!114 &1017646750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954127640673952094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7617db5ed284d4a96ad00258380304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkInterval: {fileID: 11400000, guid: 7cb27649330caa14ea302594669ed623, type: 2}
+  offset: {fileID: 0}
 --- !u!1 &4306638331141290445
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +275,34 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4512998032639819063, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905997086819482933, guid: bc1afd8ff6d7ba046994231ae5c9714b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}

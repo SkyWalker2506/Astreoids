@@ -7,6 +7,10 @@ public class EdgeManager : MonoBehaviour
     Camera mainCamera;
     float depth;
 
+    public static float Up => UpperRight.y;
+    public static float Down => LowerLeft.y;
+    public static float Right => UpperRight.x;
+    public static float Left => LowerLeft.x;
     public static Vector3 UpperLeft;
     public static Vector3 UpperRight;
     public static Vector3 LowerLeft;
@@ -21,10 +25,10 @@ public class EdgeManager : MonoBehaviour
     {
         depth = (Spaceship.Instance.transform.position.z - Camera.main.transform.position.z);
         mainCamera = Camera.main;
-        SetEdges();
+        SetValues();
     }
 
-    void SetEdges()
+    void SetValues()
     {
         var upperLeftScreen = new Vector3(0, 1, depth);
         var upperRightScreen = new Vector3(1, 1, depth);
@@ -39,6 +43,7 @@ public class EdgeManager : MonoBehaviour
 
     public static Vector3 RandomEdgePosition()
     {
+
         int caseNo= Random.Range(0, 3);
         switch (caseNo)
         {
