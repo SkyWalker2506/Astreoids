@@ -12,12 +12,25 @@ public class Bullet : MonoBehaviour
         SetInterfaces();
     }
 
+    private void OnEnable()
+    {
+        damager.OnDamage += OnDamaged;
+    }
+
+    private void OnDisable()
+    {
+        damager.OnDamage -= OnDamaged;
+    }
+
     void SetInterfaces()
     {
         poolObj = GetComponent<IPoolObj>();
         damager = GetComponent<IDamager>();
-
     }
 
+    void OnDamaged(int damage)
+    {
+        poolObj.Release();
+    }
 
 }

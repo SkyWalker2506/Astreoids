@@ -7,6 +7,7 @@ public class AstreoidManager : MonoBehaviour
     IPool astreoidPool;
     [SerializeField] AstreoidSize sizeList;
     [SerializeField] ScriptableFloat astreoidCreateInterval;
+
     private void Awake()
     {
         astreoidPool = GetComponent<IPool>();
@@ -24,7 +25,13 @@ public class AstreoidManager : MonoBehaviour
 
     void OnAstreoidDestroyed(Astreoid destroyedAstreoid)
     {
-        CreateAstreoid(destroyedAstreoid.CurrentLevel - 1, destroyedAstreoid.transform.position, destroyedAstreoid.transform.rotation);
+        if (destroyedAstreoid.CurrentLevel == 0) return;
+        for (int i = 0; i < 2; i++)
+        {
+            var astreoid =  CreateAstreoid(destroyedAstreoid.CurrentLevel - 1, destroyedAstreoid.transform.position, destroyedAstreoid.transform.rotation).transform;
+            astreoid.Rotate(-35 + 70 * i, 0, 0);
+            astreoid.Translate(astreoid.forward*.5f, Space.World);
+        }
     }
 
     Astreoid CreateAstreoid(int astreoidLevel,Vector3 position,Quaternion rotation)
@@ -39,7 +46,7 @@ public class AstreoidManager : MonoBehaviour
 
     void SetAstreoid(Astreoid astreoid)
     {
-        astreoid.transform.localScale = Vector3.one * sizeList.Sizes[Mathf.Clamp(astreoid.CurrentLevel, 0, sizeList.Sizes.Length - 1)];
+        astreoid.transform.localScale = Vector3.one * sizeList.Sizes[Mathf.Clamp(astreoid.CurrentLevel, 0, sizeList.Sizes.Length)];
     }
 
     void CreateRandomAstreoid()
@@ -50,6 +57,6 @@ public class AstreoidManager : MonoBehaviour
     void RotateAstroid(Transform transform)
     {
         transform.LookAt(Spaceship.Instance.transform);
-        transform.Rotate(Random.Range(-25,25), 0, 0);
+        transform.Rotate(Random.Range(-50,50), 0, 0);
     }
 }

@@ -44,8 +44,8 @@ public class EdgeManager : MonoBehaviour
     public static Vector3 RandomEdgePosition()
     {
 
-        int caseNo= Random.Range(0, 3);
-        switch (caseNo)
+        int edge= Random.Range(0, 3);
+        switch (edge)
         {
             case 0:
                 return RandomUpperEdgePosition;

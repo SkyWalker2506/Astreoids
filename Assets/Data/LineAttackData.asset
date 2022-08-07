@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: LineAttackData
   m_EditorClassIdentifier: 
   AttackAmount: 3
-  BulletIntervalMilliSeconds: 200
+  BulletIntervalMilliSeconds: 300
   TimeBetweenAttacksMilliSeconds: 2000

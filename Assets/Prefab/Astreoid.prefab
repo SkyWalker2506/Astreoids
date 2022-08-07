@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 1739815547778378006}
   - component: {fileID: 1872518845}
   - component: {fileID: 3171561235534894322}
-  - component: {fileID: 3171561235534894323}
+  - component: {fileID: 3895212404649814033}
+  - component: {fileID: 4413037079058638552}
   m_Layer: 0
   m_Name: Astreoid
   m_TagString: Untagged
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7781009ee48358d438322878e8104ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3171561235534894323
+--- !u!114 &3895212404649814033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,7 +147,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3171561235166062102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebd045fb2e5514eb896a031f5b3b4260, type: 3}
+  m_Script: {fileID: 11500000, guid: fa7617db5ed284d4a96ad00258380304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  releaseTime: {fileID: 11400000, guid: 55ed21db76b89ae49bd8e440d9203884, type: 2}
+  checkInterval: {fileID: 11400000, guid: 7cb27649330caa14ea302594669ed623, type: 2}
+  offset: {fileID: 11400000, guid: a71993a3f718dfb4496a5158cbb07b1b, type: 2}
+--- !u!114 &4413037079058638552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171561235166062102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 440ad862700eb498b90b8080ce141371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

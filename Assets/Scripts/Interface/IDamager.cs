@@ -2,5 +2,8 @@
 
 public interface IDamager
 {
-    public Action<int> OnDamage { get; set; }
+    int Damage { get;}
+    Action<int> OnDamage { get; set; }
+    void ApplyDamage(IDamagable damagable);
+
 }

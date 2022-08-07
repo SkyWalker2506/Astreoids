@@ -5,7 +5,7 @@ using UnityEngine;
 
 public interface IDamagable 
 {
-    public Action<int> OnDamaged { get; set; }
+    Action<int> OnDamaged { get; set; }
 
-    public void ApplyDamage(int damage);
+    void ApplyDamage(int damage);
 }
